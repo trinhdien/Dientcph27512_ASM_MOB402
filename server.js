@@ -250,6 +250,27 @@ app.post("/products/add-products", (req, res) => {
   }
   res.redirect("/products");
 });
+app.post("/home/search", (req, res) => {
+  let userSearch = new Array();
+  user.map((item, index, arr) => {
+    if (item.email.includes(req.body.txtSearch) == true) {
+      userSearch.push(item);
+    }
+  });
+  res.render("emptyView", { layout: "layoutHome", user: userSearch });
+});
+app.post("/products/search", (req, res) => {
+  let productSearch = new Array();
+  products.map((item, index, arr) => {
+    if (item.name.includes(req.body.txtSearch) == true) {
+      productSearch.push(item);
+    }
+  });
+  res.render("emptyView", {
+    layout: "layoutProducts",
+    products: productSearch,
+  });
+});
 app.engine(
   ".hbs",
   expressHbs.engine({

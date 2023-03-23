@@ -78,11 +78,17 @@
                   </ul>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
+              <form
+                action="/products/search"
+                method="post"
+                class="d-flex"
+                role="search"
+              >
                 <input
+                  name="txtSearch"
                   class="form-control me-2"
                   type="search"
-                  placeholder="Search"
+                  placeholder="Search by name product"
                   aria-label="Search"
                 />
                 <button

@@ -81,12 +81,19 @@
                   </ul>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
+              <form
+                action="/home/search"
+                method="post"
+                class="d-flex"
+                role="search"
+              >
                 <input
+                  name="txtSearch"
                   class="form-control me-2"
                   type="search"
-                  placeholder="Search"
+                  placeholder="Search by email"
                   aria-label="Search"
+                  re
                 />
                 <button
                   class="btn btn-outline-success"
