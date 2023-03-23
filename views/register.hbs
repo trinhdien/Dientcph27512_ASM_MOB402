@@ -1,0 +1,52 @@
+<body class="bg-body-tertiary p-5">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">Register</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row w-50 m-auto mt-5">
+      <form action="/register" enctype="multipart/form-data" method="POST">
+        <div class="mb-3">
+          <label for="rsemail" class="form-label">Email address</label>
+          <input
+            name="rsemail"
+            type="email"
+            class="form-control"
+            id="rsemail"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="rspassword" class="form-label">Password</label>
+          <input
+            name="rspassword"
+            type="password"
+            class="form-control"
+            id="rspassword"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="rsrepassword" class="form-label">RePassword</label>
+          <input
+            name="rsrepassword"
+            type="password"
+            class="form-control"
+            id="rsrepassword"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            name="myFile"
+            class="form-control form-control-lg"
+            id="formFileLg"
+            type="file"
+          />
+        </div>
+        <div class="row w-25 m-auto">
+          <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
