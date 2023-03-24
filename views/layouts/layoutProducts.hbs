@@ -136,6 +136,17 @@
           </div>
           <div class="modal-body">
             <form method="POST" action="/products/add-products">
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Enter id
+                  product</label>
+                <input
+                  value=""
+                  name="id"
+                  type="text"
+                  class="form-control"
+                  id="id"
+                />
+              </div>
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Enter link
                   image product</label>
@@ -148,34 +159,66 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Enter id
-                  products</label>
-                <input
-                  value=""
-                  name="id"
-                  type="text"
-                  class="form-control"
-                  id="id"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Enter
-                  price product
-                </label>
-                <input
-                  value=""
-                  name="price"
-                  type="text"
-                  class="form-control"
-                  id="price"
-                />
-              </div>
-              <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Enter name
                   product</label>
                 <input
                   value=""
                   name="name"
+                  type="text"
+                  class="form-control"
+                  id="name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Enter
+                  color product</label>
+                <input
+                  value=""
+                  name="color"
+                  type="text"
+                  class="form-control"
+                  id="color"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Enter type
+                  product</label>
+                <input
+                  value=""
+                  name="type"
+                  type="text"
+                  class="form-control"
+                  id="type"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Enter id
+                  User</label>
+                <input
+                  value=""
+                  name="idUser"
+                  type="text"
+                  class="form-control"
+                  id="idUser"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Enter Name
+                  User</label>
+                <input
+                  value=""
+                  name="nameUser"
+                  type="text"
+                  class="form-control"
+                  id="nameUser"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Enter
+                  price product</label>
+                <input
+                  value=""
+                  name="price"
                   type="text"
                   class="form-control"
                   id="name"
@@ -200,6 +243,10 @@
               <th scope="col-2">STT</th>
               <th scope="col">Image</th>
               <th scope="col">Name</th>
+              <th scope="col">Color</th>
+              <th scope="col">Type</th>
+              <th scope="col">ID User</th>
+              <th scope="col">Name User</th>
               <th scope="col">Price</th>
               <th scope="col"></th>
               <th scope="col"></th>
@@ -211,6 +258,10 @@
                 <th scope="row">{{this.id}}</th>
                 <td><img alt="" src={{this.img}} /></td>
                 <td>{{this.name}}</td>
+                <td>{{this.color}}</td>
+                <td>{{this.typeProduct}}</td>
+                <td>{{this.idUser}}</td>
+                <td>{{this.nameUser}}</td>
                 <td>{{this.price}}</td>
                 <td>
                   <div class="container mt-3">
@@ -308,6 +359,58 @@
                                 type="text"
                                 class="form-control"
                                 id="name"
+                              />
+                            </div>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputPassword1"
+                                class="form-label"
+                              >Enter color product</label>
+                              <input
+                                value={{this.color}}
+                                name="color"
+                                type="text"
+                                class="form-control"
+                                id="color"
+                              />
+                            </div>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputPassword1"
+                                class="form-label"
+                              >Enter type product</label>
+                              <input
+                                value={{this.typeProduct}}
+                                name="type"
+                                type="text"
+                                class="form-control"
+                                id="type"
+                              />
+                            </div>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputPassword1"
+                                class="form-label"
+                              >Enter id User</label>
+                              <input
+                                value={{this.idUser}}
+                                name="idUser"
+                                type="text"
+                                class="form-control"
+                                id="idUser"
+                              />
+                            </div>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputPassword1"
+                                class="form-label"
+                              >Enter Name User</label>
+                              <input
+                                value={{this.nameUser}}
+                                name="nameUser"
+                                type="text"
+                                class="form-control"
+                                id="nameUser"
                               />
                             </div>
                             <div class="mb-3">

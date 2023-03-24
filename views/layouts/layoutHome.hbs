@@ -152,6 +152,17 @@
                 />
               </div>
               <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Enter name
+                  user</label>
+                <input
+                  value=""
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  id="name"
+                />
+              </div>
+              <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Enter id
                   user</label>
                 <input
@@ -202,6 +213,7 @@
             <tr>
               <th scope="col-2">STT</th>
               <th scope="col">Image</th>
+              <th scope="col">Name</th>
               <th scope="col">Email</th>
               <th scope="col">Password</th>
               <th scope="col"></th>
@@ -213,6 +225,7 @@
               <tr>
                 <th scope="row">{{this.id}}</th>
                 <td><img alt="" src={{this.img}} /></td>
+                <td>{{this.name}}</td>
                 <td>{{this.email}}</td>
                 <td>{{this.password}}</td>
                 <td>
@@ -308,6 +321,19 @@
                                 value={{this.email}}
                                 name="email"
                                 type="email"
+                                class="form-control"
+                                id="email"
+                              />
+                            </div>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputPassword1"
+                                class="form-label"
+                              >Enter name user</label>
+                              <input
+                                value={{this.name}}
+                                name="name"
+                                type="text"
                                 class="form-control"
                                 id="name"
                               />

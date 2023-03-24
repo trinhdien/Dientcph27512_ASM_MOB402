@@ -6,7 +6,7 @@
   </div>
   <div class="container">
     <div class="row w-50 m-auto mt-5">
-      <form action="/register" enctype="multipart/form-data" method="POST">
+      <form action="/register" method="POST" enctype="multipart/form-data">
         <div class="mb-3">
           <label for="rsemail" class="form-label">Email address</label>
           <input
@@ -14,6 +14,16 @@
             type="email"
             class="form-control"
             id="rsemail"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="rsname" class="form-label">Name</label>
+          <input
+            name="rsname"
+            type="text"
+            class="form-control"
+            id="rsname"
             aria-describedby="emailHelp"
           />
         </div>
